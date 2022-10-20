@@ -1,0 +1,31 @@
+<%- include('./partials/nav.ejs') %> 
+<div class="main-container">
+    <div class="heading">
+      <h1 class="heading__title">Diary Logs</h1>
+    </div>
+    <div class="cards">
+
+      <% diaries.forEach(diaryelement => { %>
+       
+      
+      <div class="card card-1">
+        <div class="card__icon"><i class="fas fa-diamond"></i> <%= diaryelement.email %>  </div>
+        <p class="card__exit"><i class="fa fa-diamond"></i><%= diaryelement.created.toDateString() %></p>
+        <h2 class="card__title"> <%= diaryelement.dlog %> </h2>
+        <p class="card__apply">
+          <div class="wtf">
+            <a class="card__link" href="/diary/<%= diaryelement._id %>/edit">Edit<i class="fa fa-edit"></i></i></a>
+            <form action="/diary/<%= diaryelement._id %>?_method=DELETE" method="POST" class="dell">
+              <button><p class="card__del"><i class="fa fa-trash"></i></p></button>
+            </form>
+          </div>
+        </p>
+        
+      </div>
+
+      <% }) %>
+
+    </div>
+  </div>
+
+  <%- include('./partials/end.ejs') %> 

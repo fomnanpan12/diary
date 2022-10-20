@@ -1,0 +1,17 @@
+
+<%- include('./partials/nav.ejs') %> 
+
+
+<span>
+<form action="/diary/<%=diary._id %>?_method=PUT" method="POST" class="decor">
+      <!--  -->
+      <div class="form-inner">
+        <h1 style="text-align: center;">Edit</h1>
+        <!-- <input type="text" placeholder="Username"> -->
+        <input type="email"  name="email" value="<%= diary.email %>" readonly>
+        <textarea  name="dlog" rows="5" ><%= diary.dlog %></textarea>
+        <button type="submit" href="#">Update</button>
+      </div>
+    </form>
+</span>
+<%- include('./partials/end.ejs') %> 

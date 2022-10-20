@@ -1,0 +1,59 @@
+  
+    
+    @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;600&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .bodymain{
+        width: 100vw;
+        /* height: 100vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Red Rose', cursive;
+        overflow: inherit;
+        background: radial-gradient(#f588d8, #c0a3e5);
+        /* background-color: #f588d8; */
+    }
+    
+    .cardv{
+        width: 80%;
+        
+        /* height: 80vh; */
+        display: flex;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        flex-direction: column;
+        float: inherit;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: rgba(218, 21, 208, 0.25) 220px 60px 122px 200px, rgba(161, 27, 150, 0.3) 330px 333px 700px -3px;
+    }
+    
+    .cardv img{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+    
+    .cardv .details{
+        margin: 10px;
+    }
+    
+    .cardv .details h2{
+        font-weight: 600;
+    }
+    
+    .cardv .details p{
+        text-transform: uppercase;
+        font-weight: 300;
+        /* font-size: 5rem; */
+    }
